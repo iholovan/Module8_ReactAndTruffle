@@ -107,7 +107,7 @@ addEventListener(component) {
               <p>If your contracts compiled and migrated successfully, below will show a stored value of 5 (by default).</p>
               <p>Try changing the value stored on <strong>line 59</strong> of App.js.</p>
               <p>The stored value is: {this.state.storageValue}</p>
-              <button className="changeButton" onClick={ () => this.updateValue(2) }>Change value</button>
+              <button className="changeButton" onClick={ () => this.updateValue(3) }>Change value</button>
             </div>
           </div>
         </main>

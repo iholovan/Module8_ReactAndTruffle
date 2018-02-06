@@ -11,9 +11,9 @@ let getWeb3 = new Promise(function(resolve, reject) {
     if (typeof web3 !== 'undefined') {
       // Use Mist/MetaMask's provider.
 
-//    web3 = new Web3(web3.currentProvider)
+    web3 = new Web3(web3.currentProvider)
    
-      web3 = new Web3.providers.HttpProvider('http://localhost:8545');
+//      web3 = new Web3.providers.HttpProvider('http://localhost:8545');
 
       console.log(web3);
       results = {
@@ -28,10 +28,10 @@ let getWeb3 = new Promise(function(resolve, reject) {
       // Fallback to localhost if no web3 injection. We've configured this to
       // use the development console's port by default.
 
-//      var provider = new Web3.providers.HttpProvider('http://localhost:8545')
+   var provider = new Web3.providers.HttpProvider('http://localhost:8545')
   
-    var provider = new Web3(web3.currentProvider);
-    console.log(provider);
+//    var provider = new Web3(web3.currentProvider);
+      console.log(provider);
       web3 = new Web3(provider)
       console.log(web3);
       results = {
